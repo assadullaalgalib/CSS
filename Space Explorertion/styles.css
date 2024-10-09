@@ -1,0 +1,110 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #82a5ca;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0c0c34;
+}
+
+/* Hero section with gradient background */
+#hero {
+    background-image: url("background\ img.png.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Main logo styling with shadow */
+#main-logo {
+    width: 150px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.7));
+}
+
+/* Title with glow effect */
+#title {
+    margin: 20px 0;
+    font-size: 3em;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px #82a5ca, 0 0 40px #82a5ca;
+    color: white;
+}
+
+/* Button with animation */
+.btn {
+    padding: 12px 30px;
+    background: white;
+    border: none;
+    font-family: 'Orbitron', sans-serif;
+    color: #82a5ca;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #82a5ca;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.4);
+}
+
+/* Underline effect for the title */
+.underline {
+    border-bottom: 4px solid white;
+    padding-bottom: 5px;
+}
+
+/* Terms and conditions styling */
+.terms {
+    color: #aaa;
+    font-size: 0.8em;
+    margin-top: 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    #main-logo {
+        width: 120px;
+    }
+
+    #title {
+        font-size: 2.2em;
+    }
+
+    .btn {
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main-logo {
+        width: 100px;
+    }
+
+    #title {
+        font-size: 1.8em;
+    }
+
+    .btn {
+        padding: 8px 20px;
+    }
+}
